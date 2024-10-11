@@ -1,13 +1,14 @@
-import React from 'react'
+const Header = ({ title }) => {
 
-const Header = ({title = "Default Tilte"}) => {
-
-  return (
-    <header>
-      <h1>{title}</h1>
-    </header>
-  )
+    return (
+        <header>
+            <h1>{title}</h1>
+        </header>
+    )
 }
 
+Header.defaultProps = {
+    title: "Default Title"
+}
 
-export default Header
+export default Header;
