@@ -1,0 +1,8 @@
+npm start
+
+npx install json-server
+
+http://localhost:3500/items
+
+
+npx json-server -p 3500 -w data/db.json
